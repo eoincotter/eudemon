@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior:smooth;
   }
   
   /* Universal Design */
@@ -52,6 +53,7 @@ html, body {
     height: 50px;
     position: absolute;
     right: 0%;
+    color: white;
 }
 
 .sign-up:hover {
@@ -131,6 +133,40 @@ nav ul li:hover {
   .course-panels article{
     margin: 20px 10px;
   }
+
+  form{
+    text-align: center;
+    margin: 0 25%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px 0;
+  }
+
+  label{
+    width: 150px;
+    display: inline-block;
+  }
+
+  input[type=text], input[type=password]{
+    height: 22px;
+    margin: 20px 0;
+    font-family: 'Quicksand';
+  }
+
+  input[type=submit]{
+    background-color: #F1693C;
+    padding: 14px 30px 12px 30px;
+    border-radius: 55px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: 15px 0px;
+    border: none;
+  }
+
+  input[type=submit]:hover {
+    background-color: #913e23;
+    border: none;
+}
 
   /* Footer */
 footer { 
