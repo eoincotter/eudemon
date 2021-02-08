@@ -10,6 +10,7 @@
     <header>
       <h1><a href='../index.html'>Eudemon</a></h1>
       <div class='header-right'>
+        <a href="../About/theory.html" class='about'>Theory</a>
         <a href="../About/about.html" class='about'>About</a>
         <a href="../Sign-up/sign-up.html" class="sign-up">Sign up</a>
       </div>
@@ -34,7 +35,7 @@
     </header>
     <main>
         <section class="text">
-        <h1>Defusion</h1>
+        <h1 style="text-align: center; margin-bottom: 15px;">Defusion</h1>
         <p>The skill of defusion allows us to become more cognizant of the 
             automaticity of our thoughts and to watch the ones that aren't helpful from a distance.
             The unhelpful thoughts don't go away, but we see them more as the product of our mental mechanisms.
@@ -54,7 +55,7 @@
             Sometimes, when we are deeply engaged in a mental task our minds can enter into a state of flow,
             in which thoughts, emotions, and actions are temporarily in sync. But the more usual state is one of
             mind wandering. The parts of the brain involved in mind wandering are known as the <i>default mode network</i>,
-            because it is activated automatically when the brain isn't focued on specific tasks.
+            because it is activated automatically when the brain isn't focused on specific tasks.
         </p>
         <h3>Catching Automatic Thoughts</h3>
         <p>
@@ -62,8 +63,178 @@
             with our thoughts we can begin to ruminate, which can lead to anxiety and other mood problems. However,
             it is possible to learn to defuse from our automatic thoughts. Defusing from our thoughts is similar to 
             observing toddlers arguing. We watch with amusement and curiosity, but do nothing else than notice them.
-            Here are some exercises to practice defusion...
+            Before practicing defusion, it is good to get a basic assessment of the degree to which fusion with negative
+            thoughts may be causing you distress. The following assessment is called the Cognitive Fusion Questionnaire.
+            Please rate how true each statement is for you by selecting a number below it. Use the scale below to make
+            your choice.
         </p>
+        <ul style="list-style: none;">
+            <li>1 = never true</li>
+            <li>2 = very seldom true</li>  
+            <li>3 = seldom true</li> 
+            <li>4 = sometimes true</li>  
+            <li>5 = frequently true</li>
+            <li>6 = almost always true</li>
+            <li>7 = always true</li>
+        </ul>
+        <form id="cognitive-fusion-questionnaire" name="cognitive-fusion-questionnaire" action=""  onsubmit="return calculateScore()">
+            <h3>Cognitive Fusion Questionnaire</h3>
+            <p>1. My thoughts cause me distress or emotional pain</p>
+            <label for="1q1">1</label>
+            <input type="radio" name="q1" id="1q1" value="1">
+            <label for="2q1">2</label>
+            <input type="radio" name="q1" id="2q1" value="2">
+            <label for="3q1">3</label>
+            <input type="radio" name="q1" id="3q1" value="3">
+            <label for="4q1">4</label>
+            <input type="radio" name="q1" id="4q1" value="4">
+            <label for="5q1">5</label>
+            <input type="radio" name="q1" id="5q1" value="5">
+            <label for="6q1">6</label>
+            <input type="radio" name="q1" id="6q1" value="6">
+            <label for="7q1">7</label>
+            <input type="radio" name="q1" id="7q1" value="7">
+            <br>
+            <p>2. I get so caught up in my thoughts that I am unable to do the things that I most want to do</p>
+            <label for="1q2">1</label>
+            <input type="radio" name="q2" id="1q2" value="1">
+            <label for="2q2">2</label>
+            <input type="radio" name="q2" id="2q2" value="2">
+            <label for="3q2">3</label>
+            <input type="radio" name="q2" id="3q2" value="3">
+            <label for="4q2">4</label>
+            <input type="radio" name="q2" id="4q2" value="4">
+            <label for="5q2">5</label>
+            <input type="radio" name="q2" id="5q2" value="5">
+            <label for="6q2">6</label>
+            <input type="radio" name="q2" id="6q2" value="6">
+            <label for="7q2">7</label>
+            <input type="radio" name="q2" id="7q2" value="7">
+            <br>
+            <p>3. I overanalyze situations to the point where it's unhelpful to me</p>
+            <label for="1q3">1</label>
+            <input type="radio" name="q3" id="1q3" value="1">
+            <label for="2q3">2</label>
+            <input type="radio" name="q3" id="2q3" value="2">
+            <label for="3q3">3</label>
+            <input type="radio" name="q3" id="3q3" value="3">
+            <label for="4q3">4</label>
+            <input type="radio" name="q3" id="4q3" value="4">
+            <label for="5q3">5</label>
+            <input type="radio" name="q3" id="5q3" value="5">
+            <label for="6q3">6</label>
+            <input type="radio" name="q3" id="6q3" value="6">
+            <label for="7q3">7</label>
+            <input type="radio" name="q3" id="7q3" value="7">
+            <br>
+            <p>4. I struggle with my thoughts</p>
+            <label for="1q4">1</label>
+            <input type="radio" name="q4" id="1q4" value="1">
+            <label for="2q4">2</label>
+            <input type="radio" name="q4" id="2q4" value="2">
+            <label for="3q4">3</label>
+            <input type="radio" name="q4" id="3q4" value="3">
+            <label for="4q4">4</label>
+            <input type="radio" name="q4" id="4q4" value="4">
+            <label for="5q4">5</label>
+            <input type="radio" name="q4" id="5q4" value="5">
+            <label for="6q4">6</label>
+            <input type="radio" name="q4" id="6q4" value="6">
+            <label for="7q4">7</label>
+            <input type="radio" name="q4" id="7q4" value="7">
+            <br>
+            <p>5. I get upset with myself for having certain thoughts</p>
+            <label for="1q5">1</label>
+            <input type="radio" name="q5" id="1q5" value="1">
+            <label for="2q5">2</label>
+            <input type="radio" name="q5" id="2q5" value="2">
+            <label for="3q5">3</label>
+            <input type="radio" name="q5" id="3q5" value="3">
+            <label for="4q5">4</label>
+            <input type="radio" name="q5" id="4q5" value="4">
+            <label for="5q5">5</label>
+            <input type="radio" name="q5" id="5q5" value="5">
+            <label for="6q5">6</label>
+            <input type="radio" name="q5" id="6q5" value="6">
+            <label for="7q5">7</label>
+            <input type="radio" name="q5" id="7q5" value="7">
+            <br>
+            <p>6. I tend to get very entangled in my thoughts</p>
+            <label for="1q6">1</label>
+            <input type="radio" name="q6" id="1q6" value="1">
+            <label for="2q6">2</label>
+            <input type="radio" name="q6" id="2q6" value="2">
+            <label for="3q6">3</label>
+            <input type="radio" name="q6" id="3q6" value="3">
+            <label for="4q6">4</label>
+            <input type="radio" name="q6" id="4q6" value="4">
+            <label for="5q6">5</label>
+            <input type="radio" name="q6" id="5q6" value="5">
+            <label for="6q6">6</label>
+            <input type="radio" name="q6" id="6q6" value="6">
+            <label for="7q6">7</label>
+            <input type="radio" name="q6" id="7q6" value="7">
+            <br>
+            <p>7. It's such a struggle to let go of upsetting thoughts, even when I know that letting go
+                would be helpful
+            </p>
+            <label for="1q7">1</label>
+            <input type="radio" name="q7" id="1q7" value="1">
+            <label for="2q7">2</label>
+            <input type="radio" name="q7" id="2q7" value="2">
+            <label for="3q7">3</label>
+            <input type="radio" name="q7" id="3q7" value="3">
+            <label for="4q7">4</label>
+            <input type="radio" name="q7" id="4q7" value="4">
+            <label for="5q7">5</label>
+            <input type="radio" name="q7" id="5q7" value="5">
+            <label for="6q7">6</label>
+            <input type="radio" name="q7" id="6q7" value="6">
+            <label for="7q7">7</label>
+            <input type="radio" name="q7" id="7q7" value="7">
+            <br>
+            <input id="CFQ-submit" type="submit" value="Get score">
+            <h3 id="CFQ-score-confirmation">Your score: X</h3>
+          </form>
+          <p>
+              A rough guideline is that if you score below 20, you are able to think reasonably flexibly. As your score
+              moves into the mid to upper 20s and 30s, fusion is becoming more dominant, and defusion exercises will be
+              helpful to you in getting needed distance from your thoughts.
+          </p>
+          <p>
+              Now that you have evaluated your own level of cognitive fusion, it's time to learn exercises that can be used to 
+              improve your defusion skills. Some of these are general exercises for improving defusion, while others can be applied
+              when you find yourself fused with inhelpful thoughts. Some of these exercises may seem strange, but stick with them. 
+              All of the exercises are <a href="../About/theory.html" style="color: #F1693C">evidence-based and grounded in psychological theory</a>. 
+          </p>
+          <h3>General Exercise 1: Disobey on Purpose</h3>
+          <p>
+              Stand up and walk around while reading this next sentence aloud several times: "I cannot walk around this
+              room." Keep walking and clearly repeat that sentence at least five or six times as you do so. This exercise 
+              is a small demonstration that the mind's power over you is an illusion and this can very quickly give you significant 
+              freedom. This can easily be built into your life as a regular practice.
+          </p>
+          <h3>General Exercise 2: Give Your Mind a Name and Listen to it Politely</h3>
+          <p>
+              If your mind has a name, then it is different from "you." When you listen to someone else, you can choose to
+              agree with what they say or not. That is the posture you want to take with your internal voice. Pick any name 
+              you like - even Mr. Mind or Mrs. Mind will do. Now say hello to your mind using its new name, as if you're being 
+              introduced to it at a dinner party. You can do this regularly. Every morning you can say "Good morning Mrs. Mind."
+          </p>
+          <h3>Specific Exercise 1: Appreciate What Your Mind Is Trying to Do</h3>
+          <p>
+              When your mind starts to chatter, answer back with something like "Thanks for that thought, Mr. Mind. Really, thank you."
+              And be sincere. If you speak to your mind dismissively, it will continue with its unhelpful problem solving.
+              If your mind pushes back with more unhelpful thoughts, respond again with "Thank you Mrs. Mind. I really do see how you are trying
+              to be of use."
+          </p>
+          <h3>Specific Exercise 2: Sing It</h3>
+          <p>
+              When you're having a really sticky thought, turn it into a sentence and try singing it - out loud if you are alone,
+              in your head if you have company. Any tune will work, for example "Happy Birthday." You don't have to be clever about
+              the wording or rhyming. Try different tunes, sing it fast or slow, high or low. The measure of success is not that the 
+              thought goes away. It is that you can see it as a thought, and do so just a bit more clearly.
+          </p>
     </section>
     </main>
     <footer>

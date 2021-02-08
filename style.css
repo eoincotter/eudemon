@@ -42,6 +42,10 @@ html, body {
     display: inline-block;
   }
 
+  .about{
+    margin-left: 4%;
+  }
+
   .header-right{
     position: absolute;
     right: 0%;
@@ -200,7 +204,7 @@ nav ul li:hover {
     margin: 20px 10px;
   }
 
-  form{
+  #sign-up-form{
     text-align: center;
     margin: 0 25%;
     border: 1px solid lightgray;
@@ -208,16 +212,16 @@ nav ul li:hover {
     padding: 20px 0;
   }
 
-  form:hover{
+  #sign-up-form:hover{
     box-shadow: -2px -2px 20px grey;
   }
 
-  label{
+  #sign-up-form label{
     width: 150px;
     display: inline-block;
   }
 
-  input[type=text], input[type=password]{
+  #sign-up-form input[type=text], #sign-up-form input[type=password]{
     height: 22px;
     margin: 20px 0;
     font-family: 'Quicksand';
@@ -246,8 +250,34 @@ textarea{
   margin: 0 15%;
 }
 
-.text p, .text textarea{
+.text p, .text textarea, .text ul{
   margin-bottom: 15px;;
+}
+
+#cognitive-fusion-questionnaire p{
+  margin-top: 25px;
+}
+
+#cognitive-fusion-questionnaire input[type=radio]{
+  margin-right: 30px;
+}
+
+#cognitive-fusion-questionnaire {
+  text-align: center;
+  /*margin: 0 25%;*/
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+
+#cognitive-fusion-questionnaire:hover{
+  box-shadow: -2px -2px 20px grey;
+}
+
+#CFQ-score-confirmation {
+  display: none;
+  margin-top: 15px;
 }
 
   /* Footer */
