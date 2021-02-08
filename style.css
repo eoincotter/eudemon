@@ -41,7 +41,15 @@ html, body {
     display: inline-block;
   }
 
-  
+  .header-right{
+    position: absolute;
+    right: 0%;
+    display: inline-block;
+    height: 50px;
+    width: 50%;
+    text-align: right;
+  }
+
   .sign-up {
   background-color: #F1693C;
     padding: 14px 30px 12px 30px;
@@ -51,14 +59,61 @@ html, body {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 50px;
-    position: absolute;
-    right: 0%;
     color: white;
 }
 
 .sign-up:hover {
     background-color: #913e23;
 }
+
+.bar-container {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0%;
+  margin: 15px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #F1693C;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.header-right-dropdown{
+  position: absolute;
+  right: 0;
+  list-style: none;
+  background-color: white;
+  border: 1px solid black;
+  width: 50%;
+  text-align: center;
+  z-index: 15;
+  display: none;
+}
+
+.header-right-dropdown li{
+  padding: 5px 0;
+}
+
+.header-right-dropdown.change{
+  display: block;
+}
+
   /* Nav Bar */
   nav { 
     background: beige;
@@ -94,6 +149,12 @@ nav ul li:hover {
     transition: background .5s;
     border-bottom: 4px solid #F1693C;  
   }
+
+.dropdown{
+  border: 1px solid lightgray;
+  height: 200px;
+  display: none;
+}
 
   /* Main */
   main{
@@ -187,13 +248,17 @@ footer {
 footer p{
   text-align: center;
 }
-/*
+
 @media only screen and (max-width: 768px){
-  nav ul li{
+  .header-right {
     display: none;
+  }
+
+  .bar-container{
+    display: inline-block;
   }
 
   html{
     font-size: 12px;
   }
-}*/
+}

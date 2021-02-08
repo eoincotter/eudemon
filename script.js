@@ -1,14 +1,24 @@
-let coursePanel = document.querySelector('.mindfulness-course-one');
+let navOptions = document.querySelectorAll('li a');
+let dropdown = document.querySelector('.dropdown');
 
-let increaseSize = function() {
-    coursePanel.style.height = '315px';  
-    coursePanel.style.width = '236px';  
+let showDropdown = function() {
+    dropdown.style.display = 'block';    
 };
 
 let reset = function() {
-    coursePanel.style.height = '';  
-    coursePanel.style.width = '';  
+    dropdown.style.display = '';  
 };
 
-coursePanel.addEventListener('mouseover', increaseSize);
-coursePanel.addEventListener('mouseout', reset);
+var i;
+for (i = 0; i < navOptions.length; i++) {
+  navOptions[i].addEventListener('mouseover', showDropdown);
+  navOptions[i].addEventListener('mouseout', reset);
+}
+
+dropdown.addEventListener('mouseover', showDropdown);
+dropdown.addEventListener('mouseout', reset);
+
+function myFunction(x) {
+  x.classList.toggle("change");
+  document.querySelector('.header-right-dropdown').classList.toggle("change");
+}
