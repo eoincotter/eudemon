@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eudemon</title>
+    <link href="../style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href='../index.html'>Eudemon</a></h1>
+      <div class='header-right'>
+        <a href="../About/theory.html" class='about'>Theory</a>
+        <a href="../About/about.html" class='about'>About</a>
+        <a href="../Sign-up/sign-up.html" class="sign-up">Sign up</a>
+      </div>
+      <div class="bar-container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="header-right-dropdown">
+        <li><a href="sign-up.html">Sign up</a></li>
+        <li><a href="../About/about.html">About</a></li>
+      </ul>  
+      <nav>
+        <ul>
+          <li><a href="../index.html#core-skills">Core Skills</a></li>
+          <li><a href="../index.html#positive-emotion">Positive Emotion</a></li>
+          <li><a href="../index.html#relationships">Relationships</a></li>
+          <li><a href="../index.html#accomplishment">Accomplishment</a></li>
+          <li><a href="../index.html#health" id="show">Health</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="text">
+        <h1 style="text-align: center; margin-bottom: 15px;">Self</h1>
+        <p>
+            A sense of observing from within our mind from the perspective of an "I" is a constant in our lives. We can call this
+            "I" <i>the transcendent self</i> because it is always there within us, no matter where we are, who we're with, and what
+            the conditions of our lives are. At the same time, we continually construct a story of our self - crafting <i>the conceptualized
+            self</i> - which can block our awareness of our transcendent self. We become so focued on bolsetring and defending this story we weave
+            that we end up trying to hide aspects of who we are and of our experiences, not only from others, but from ourselves as well.
+        </p>
+        <p>
+            Human beings yearn to be seen, cared for, and included as a member of the group. While this yearning is natural and healthy,
+            many of the ways our minds try to satisfy it causes us psychic pain. We lie about ourselves to defend our ego; we play the victim; we berate ourselves
+            for failing to meet inflated standards that might please others; and we become consumed by worries about rejection and perceived slights.
+            The harm caused can be seen in stark relief when we consider the quest for self-esteem. While high self-esteem is a worthy goal, research shows that when people focus on building, protecting, and
+            maintaining self-esteem, they can become less able to focus on what they really value. They are more likely to feel pressured, stressed, and anxious and to 
+            be less resilient when facing challenges. 
+        </p>
+        <p>
+            Genuine self-esteem is soft and open to our own flaws; the kind built on pretense is rigid, defended, and rejecting of self-honesty. The difference
+            between these is fusion with our conceptualized self.
+        </p>
+        <h3>Connecting with the Transcendent Self</h3>
+        <p>
+            The Self skill takes the healthy energy of yearning to belong and swings it in the direction of reconnecting with our transcendent self.
+            Through perspective-taking we connect with our awareness of our transcendent self in the here and now, which frees us from the grip of
+            self-evaluation and the notion that we need to get others to buy into our stories of specialness in order to connect and belong.
+        </p>
+        <p>
+            The Self skill begins by catching the hidden sense of your transcendent self. Here are 4 steps for connecting with our deeper sense of self:
+        </p>
+        <p>
+            1. Undermine the attachment to the conceptualised self by applying defusion methods, like those described in the 
+            <a href="defusion.html" style="color: #F1693C" target="_blank">Defusion course</a>, to the way we tell stories about ourselves.
+        </p>
+        <p>
+            2. See how that opens the mental space to become aware of the perspective-taking that undelries a sense of self that is continuously present.
+            When looking at mental content, notice both that the transcendent self is distinct from content ("I am not my thoughts") and that it contains
+             content ("I can hold my thoughts in awareness").
+        </p>
+        <p>
+            3. Cultivate habits of perspective-taking through exercises that shift your perspective along the dimensions of time, place, and person.
+        </p>
+        <p>
+            4. Use perspective-taking to build a healthy sense of belonging and interconnection with other in consciousness.
+        </p>
+        <p>
+            Repeated, ongoing engagement with exercises will keep strengthening your perspective-taking muscle.
+        </p>
+        <h3>Exercise 1: I Am/I Am Not</h3>
+        <p>
+            Below are three unfinished sentences. Complete the top two with one-word answers that represent positive psychological attributes of yours.
+            Don't put in mere descriptive attributes (e.g., I am male). Use terms that refer to your most prized personal qualities. In the last sentence,
+            list in a single word a personal attribute that you think you have that is negative.
+        </p>
+        
+        <form id="i-am-1" name="i-am-1" action="" onsubmit="return saveIAmInput(this)">
+            <p>I am <input type="text" name="i-am-input">. <input style="display: inline;" id="" type="submit" value="Save"></p>            
+        </form>
+        <form id="i-am-2" name="i-am-2" action="" onsubmit="return saveIAmInput(this)">
+            <p>I am <input type="text" name="i-am-input">. <input style="display: inline;" id="" type="submit" value="Save"></p>            
+        </form>
+        <form id="i-am-3" name="i-am-3" action="" onsubmit="return saveIAmInput(this)">
+            <p>I am <input type="text" name="i-am-input">. <input style="display: inline;" id="" type="submit" value="Save"></p>            
+        </form>
+        <p>
+            Let's review the top two "positive" answers. Answer these questions: Is this true all the time? Everywhere? Toward everyone? Without exception?
+            What about the bottom one. Is it totally true, everywhere? Probably not. The beginning of a solution is to notice your fusion with these statements.
+            In the sentences below, finish them by writing these two words: "or not". Read each of the sentences slowly as you do so.
+        </p>
+        <p style="display: inline;" id="i-am-1-or-not">I am __ , </p><input type="text">
+        <br>
+        <p style="display: inline;" id="i-am-2-or-not">I am __ , </p><input type="text">
+        <br>
+        <p style="display: inline;" id="i-am-3-or-not">I am __ , </p><input type="text">
+        <p></p>
+        <p>
+            After reading these a few times, you may feel that you somehow have more options about hwo you think about yourself. The mental process that we 
+            are cultivating here is reminding ourselves that we can refuse to buy one version of a story as compared to another.
+        </p>
+        <p>
+            Now look at the sentences below, where everything after <i>I am</i> has been crossed out. Who would you be without that content? Pause to
+            consider the answer.
+        </p>
+        <p style="display: inline;" id="i-am-1-strike">I am __</p>
+        <br>
+        <p style="display: inline;" id="i-am-2-strike">I am __</p>
+        <br>
+        <p style="display: inline;" id="i-am-3-strike">I am __</p>
+        <p>
+            Now focus on the two words that remain - <i>I am</i>. What if the deeper sense of self we seek is closer to these two words alone?
+            In crafting the story of our lives, we lose sight of this powerful alternative: just being.
+        </p>
+        <h3>Exercise 2: One Truthful Conversation at a Time</h3>
+        <p>Another good way to let go of your self-story is to practice being yourself more fully and openly with another person. You can do this
+            exercise during any conversation with a friend or co-worker you trust, and include more people as time goes on. Look carefully for
+            exaggerations, overstatements, half-truths, or pretending to know more than you do. See if you can let go of the attachment to do this and see
+        if you can speak more honestly.</p>
+    </section>
+    </main>
+    <footer>
+        <p>©Eoin Cotter 2021</p>
+      </footer>
+    </body>
+</html>

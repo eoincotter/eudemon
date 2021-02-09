@@ -121,10 +121,10 @@ html, body {
 
   /* Nav Bar */
   nav { 
-    background: beige;
     height: 80px; 
     width: 100%;
-    border-bottom: 4px solid beige;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
   }
 
   nav ul {
@@ -242,6 +242,10 @@ nav ul li:hover {
     border: none;
 }
 
+input[type=text]{
+  font-family: 'Quicksand';
+}
+
 textarea{
   font-family: 'Quicksand', sans-serif;
 }
@@ -282,10 +286,10 @@ textarea{
 
   /* Footer */
 footer { 
-    background: beige;
     height: 80px; 
     padding-bottom: 20px;
     padding-top: 20px;
+    border-top: 1px solid lightgray;
   }
 
 footer p{
@@ -299,9 +303,5 @@ footer p{
 
   .bar-container{
     display: inline-block;
-  }
-
-  html{
-    font-size: 12px;
   }
 }

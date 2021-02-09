@@ -38,3 +38,13 @@ function calculateScore() {
   document.getElementById("CFQ-submit").style.display = "none";
   return false;
   }
+
+// I am/I am not exercise input handler
+function saveIAmInput(form) {
+  input = form["i-am-input"].value;
+  document.querySelector(`#${form.id} p`).innerHTML = `I am ${input}.`;
+  document.querySelector(`#${form.id}-or-not`).innerHTML = `I am ${input}, `;
+  document.querySelector(`#${form.id}-strike`).innerHTML = `I am <s>${input}</s>.`;
+  return false;
+  }
+
