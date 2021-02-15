@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eudemon</title>
+    <link href="../style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href='../index.html'>Eudemon</a></h1>
+      <div class='header-right'>
+        <a href="../About/theory.html" class='header-links'>Theory</a>
+        <a href="../About/about.html" class='header-links'>About</a>
+        <a href="../Sign-up/sign-up.html" class="sign-up">Sign up</a>
+      </div>
+      <div class="hamburger-button" onclick="displayHamburgerDropdown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="hamburger-dropdown">
+        <li><a href="sign-up.html">Sign up</a></li>
+        <li><a href="../About/about.html">About</a></li>
+      </ul>  
+      <nav>
+        <ul>
+          <li><a href="../index.html#core-skills">Core Skills</a></li>
+          <li><a href="../index.html#positive-emotion">Positive Emotion</a></li>
+          <li><a href="../index.html#relationships">Relationships</a></li>
+          <li><a href="../index.html#accomplishment">Accomplishment</a></li>
+          <li><a href="../index.html#health">Health</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+			<section class="text">
+				<h1 style="text-align: center; margin-bottom: 15px;">Values</h1>
+				<p>
+					There is no yearning more important to human beings than to freely pick and pursue our life direction. 
+                    Clear sense of self directed meaning provides us with an essentially inexhaustible supply of motivation. 
+                    But we can easily lose sight of what is actually meaningful to us, pursuing socially compliant goals and 
+                    superficial gratifications instead. 
+				</p>
+                <h3>Why do we lose sight of what is meaningful?</h3>
+                <p>We misdirect our yearning for meaning for a number of reasons. For example:</p>
+                <ul>
+                    <li>We don't trust ourselves to make good choices, and we escape from the freedom life gives us. </li>
+                    <li>We fear we might pick a life course we don't have the necessary qualities to pursue.  </li>
+                    <li>We worry that our values may be out of step with cultural norms, leading us to be looked down on, left out, or even ridiculed.  </li>
+                    <li>Most commonly of all, we turn away from our true values because of past pain we want to avoid.  </li>
+                </ul>
+                <p>
+                    In the main, our culture doesn't help people choose their own sense of meaning. instead, we are encouraged 
+                    to define what gives us a sense of worth by chasing superficial ones. We mistake a quick hit of gratification
+                    for a sense of meaning, and we accumulate things and achievements, pursuing a long list of socially mandated 
+                    "shoulds". dominant social messages that are worth its evaluated by our possessions and by culturally approved 
+                    forms of achievement or compliance with social expectations, whether that's work success, getting married and 
+                    having children, or even being happy. 
+                </p>
+                <p>
+                    Consider the effects of materialism, the belief that possessions and their acquisition will lead to life satisfaction.
+                    Studies have been done in which people fill out surveys asking if they agree with statements such as "some of the 
+                    most important achievements in life including acquiring material possessions", "I'd be happier if I could afford to 
+                    buy more things"; and "I like to own things that impress people." Agreement correlates significantly with anxiety, 
+                    depression, negative self-assessment, and low life satisfaction. 
+                </p>
+                <p>
+                    The values skill allows us to redirect our yearning for meaning toward the pursuit of the activities that align with
+                    what we truly find meaningful. 
+                </p>
+                <h3>Using Our Acceptance, Defusion, Self, and Presence Skills to Assist Pivoting Towards Our Values</h3>
+                <h4>Acceptance Allows Us to Listen</h4>
+                <p>
+                    If we're blocked from connecting to our values because we're trying to avoid pain, we ironically only 
+                    contribute to our pain. By listening to our pain instead, we can identify the discrepancies between the 
+                    way in which we're living and the way we want to live. When we open up to pain, we should flip it over and ask
+                    "what would I have to not care about for this not to hurt?". In our pain we find our values, and in our avoidance
+                    we find our values disconnection. Without emotional flexibility and openness, it's impossible to live according to
+                    chosen values. 
+                <h4>Presence Helps Stay Focused on the Ongoing Journey</h4>
+                <p>
+                    It is important to distinguish between goals and values. Values are qualities of living - such as 
+                    living lovingly, playfully, kindly, compassionately, protectively, persistently, and faithfully.
+                    Values-based living makes goals meaningful, rather than goals being valuable in themselves. Goals 
+                    are in the future until they are achieved, and then they're quickly in the past. Values are always in
+                    the now. Living day to day according to our values is enormously rewarding. As we work toward living
+                    in accordance with our values, attention to the present helps focus on our current behavior - on the 
+                    journey rather than reaching the destination.
+                <h3>The Valued Living Questionnaire</h3>
+                </p>
+                    The VLQ asks a series of questions about what your values are and how much you have been living in accordance 
+                    with them, evaluating that measure in a set of life domains, on a scale of 1 to 10. Answer as honestly as 
+                    possible, setting aside as best you can social pressures and the wagging mental fingers of <i>should</i> 
+                    and <i>have to</i>. 
+                </p>
+                <form class ="questionnaire" id="VLQ-questionnaire" name="VLQ-questionnaire" action=""  onsubmit="return calculateVLQScore()">
+                    <h3>Valued Living Questionnaire</h3>
+                    <p>The following are domains of life that contain values for some people. We are concerned with your quality
+                        of life in each of these areas. One aspect of quality of life involves the importance one puts on different 
+                        areas of living. Rate the importance of each area on a scale of one to ten. A score of 1 means that area is 
+                        not at all important. A score of 10 means that area is very important. Not everyone will have notable values 
+                        in all of these areas, or care about all areas the same. Rate each area according to your own personal sense 
+                        of importance. 
+                    </p>
+                    <p>1. Family (other than marriage or parenting)</p>
+                    <label for="1q1">1</label>
+                    <input type="radio" name="q1" id="1q1" value="1">
+                    <label for="2q1">2</label>
+                    <input type="radio" name="q1" id="2q1" value="2">
+                    <label for="3q1">3</label>
+                    <input type="radio" name="q1" id="3q1" value="3">
+                    <label for="4q1">4</label>
+                    <input type="radio" name="q1" id="4q1" value="4">
+                    <label for="5q1">5</label>
+                    <input type="radio" name="q1" id="5q1" value="5">
+                    <label for="6q1">6</label>
+                    <input type="radio" name="q1" id="6q1" value="6">
+                    <label for="7q1">7</label>
+                    <input type="radio" name="q1" id="7q1" value="7">
+                    <label for="8q1">8</label>
+                    <input type="radio" name="q1" id="8q1" value="8">
+                    <label for="9q1">9</label>
+                    <input type="radio" name="q1" id="9q1" value="9">
+                    <label for="10q1">10</label>
+                    <input type="radio" name="q1" id="10q1" value="10">
+                    <br>
+                    <p>2. Marriage/couple/intimate relations</p>
+                    <label for="1q2">1</label>
+                    <input type="radio" name="q2" id="1q2" value="1">
+                    <label for="2q2">2</label>
+                    <input type="radio" name="q2" id="2q2" value="2">
+                    <label for="3q2">3</label>
+                    <input type="radio" name="q2" id="3q2" value="3">
+                    <label for="4q2">4</label>
+                    <input type="radio" name="q2" id="4q2" value="4">
+                    <label for="5q2">5</label>
+                    <input type="radio" name="q2" id="5q2" value="5">
+                    <label for="6q2">6</label>
+                    <input type="radio" name="q2" id="6q2" value="6">
+                    <label for="7q2">7</label>
+                    <input type="radio" name="q2" id="7q2" value="7">
+                    <label for="8q2">8</label>
+                    <input type="radio" name="q2" id="8q2" value="8">
+                    <label for="9q2">9</label>
+                    <input type="radio" name="q2" id="9q2" value="9">
+                    <label for="10q2">10</label>
+                    <input type="radio" name="q2" id="10q2" value="10">
+                    <br>
+                    <p>3. Parenting</p>
+                    <label for="1q3">1</label>
+                    <input type="radio" name="q3" id="1q3" value="1">
+                    <label for="2q3">2</label>
+                    <input type="radio" name="q3" id="2q3" value="2">
+                    <label for="3q3">3</label>
+                    <input type="radio" name="q3" id="3q3" value="3">
+                    <label for="4q3">4</label>
+                    <input type="radio" name="q3" id="4q3" value="4">
+                    <label for="5q3">5</label>
+                    <input type="radio" name="q3" id="5q3" value="5">
+                    <label for="6q3">6</label>
+                    <input type="radio" name="q3" id="6q3" value="6">
+                    <label for="7q3">7</label>
+                    <input type="radio" name="q3" id="7q3" value="7">
+                    <label for="8q3">8</label>
+                    <input type="radio" name="q3" id="8q3" value="8">
+                    <label for="9q3">9</label>
+                    <input type="radio" name="q3" id="9q3" value="9">
+                    <label for="10q3">10</label>
+                    <input type="radio" name="q3" id="10q3" value="10">
+                    <br>
+                    <p>4. Friends/social life</p>
+                    <label for="1q4">1</label>
+                    <input type="radio" name="q4" id="1q4" value="1">
+                    <label for="2q4">2</label>
+                    <input type="radio" name="q4" id="2q4" value="2">
+                    <label for="3q4">3</label>
+                    <input type="radio" name="q4" id="3q4" value="3">
+                    <label for="4q4">4</label>
+                    <input type="radio" name="q4" id="4q4" value="4">
+                    <label for="5q4">5</label>
+                    <input type="radio" name="q4" id="5q4" value="5">
+                    <label for="6q4">6</label>
+                    <input type="radio" name="q4" id="6q4" value="6">
+                    <label for="7q4">7</label>
+                    <input type="radio" name="q4" id="7q4" value="7">
+                    <label for="8q4">8</label>
+                    <input type="radio" name="q4" id="8q4" value="8">
+                    <label for="9q4">9</label>
+                    <input type="radio" name="q4" id="9q4" value="9">
+                    <label for="10q4">10</label>
+                    <input type="radio" name="q4" id="10q4" value="10">
+                    <br>
+                    <p>5. Work</p>
+                    <label for="1q5">1</label>
+                    <input type="radio" name="q5" id="1q5" value="1">
+                    <label for="2q5">2</label>
+                    <input type="radio" name="q5" id="2q5" value="2">
+                    <label for="3q5">3</label>
+                    <input type="radio" name="q5" id="3q5" value="3">
+                    <label for="4q5">4</label>
+                    <input type="radio" name="q5" id="4q5" value="4">
+                    <label for="5q5">5</label>
+                    <input type="radio" name="q5" id="5q5" value="5">
+                    <label for="6q5">6</label>
+                    <input type="radio" name="q5" id="6q5" value="6">
+                    <label for="7q5">7</label>
+                    <input type="radio" name="q5" id="7q5" value="7">
+                    <label for="8q5">8</label>
+                    <input type="radio" name="q5" id="8q5" value="8">
+                    <label for="9q5">9</label>
+                    <input type="radio" name="q5" id="9q5" value="9">
+                    <label for="10q5">10</label>
+                    <input type="radio" name="q5" id="10q5" value="10">
+                    <br>
+                    <p>6. Education/training</p>
+                    <label for="1q6">1</label>
+                    <input type="radio" name="q6" id="1q6" value="1">
+                    <label for="2q6">2</label>
+                    <input type="radio" name="q6" id="2q6" value="2">
+                    <label for="3q6">3</label>
+                    <input type="radio" name="q6" id="3q6" value="3">
+                    <label for="4q6">4</label>
+                    <input type="radio" name="q6" id="4q6" value="4">
+                    <label for="5q6">5</label>
+                    <input type="radio" name="q6" id="5q6" value="5">
+                    <label for="6q6">6</label>
+                    <input type="radio" name="q6" id="6q6" value="6">
+                    <label for="7q6">7</label>
+                    <input type="radio" name="q6" id="7q6" value="7">
+                    <label for="8q6">8</label>
+                    <input type="radio" name="q6" id="8q6" value="8">
+                    <label for="9q6">9</label>
+                    <input type="radio" name="q6" id="9q6" value="9">
+                    <label for="10q6">10</label>
+                    <input type="radio" name="q6" id="10q6" value="10">
+                    <br>
+                    <p>7. Recreation/fun</p>
+                    <label for="1q7">1</label>
+                    <input type="radio" name="q7" id="1q7" value="1">
+                    <label for="2q7">2</label>
+                    <input type="radio" name="q7" id="2q7" value="2">
+                    <label for="3q7">3</label>
+                    <input type="radio" name="q7" id="3q7" value="3">
+                    <label for="4q7">4</label>
+                    <input type="radio" name="q7" id="4q7" value="4">
+                    <label for="5q7">5</label>
+                    <input type="radio" name="q7" id="5q7" value="5">
+                    <label for="6q7">6</label>
+                    <input type="radio" name="q7" id="6q7" value="6">
+                    <label for="7q7">7</label>
+                    <input type="radio" name="q7" id="7q7" value="7">
+                    <label for="8q7">8</label>
+                    <input type="radio" name="q7" id="8q7" value="8">
+                    <label for="9q7">9</label>
+                    <input type="radio" name="q7" id="9q7" value="9">
+                    <label for="10q7">10</label>
+                    <input type="radio" name="q7" id="10q7" value="10">
+                    <br>
+                    <p>8. Spirituality</p>
+                    <label for="1q8">1</label>
+                    <input type="radio" name="q8" id="1q8" value="1">
+                    <label for="2q8">2</label>
+                    <input type="radio" name="q8" id="2q8" value="2">
+                    <label for="3q8">3</label>
+                    <input type="radio" name="q8" id="3q8" value="3">
+                    <label for="4q8">4</label>
+                    <input type="radio" name="q8" id="4q8" value="4">
+                    <label for="5q8">5</label>
+                    <input type="radio" name="q8" id="5q8" value="5">
+                    <label for="6q8">6</label>
+                    <input type="radio" name="q8" id="6q8" value="6">
+                    <label for="7q8">7</label>
+                    <input type="radio" name="q8" id="7q8" value="7">
+                    <label for="8q8">8</label>
+                    <input type="radio" name="q8" id="8q8" value="8">
+                    <label for="9q8">9</label>
+                    <input type="radio" name="q8" id="9q8" value="9">
+                    <label for="10q8">10</label>
+                    <input type="radio" name="q8" id="10q8" value="10">
+                    <br>
+                    <p>9. Citizenship/community life</p>
+                    <label for="1q9">1</label>
+                    <input type="radio" name="q9" id="1q9" value="1">
+                    <label for="2q9">2</label>
+                    <input type="radio" name="q9" id="2q9" value="2">
+                    <label for="3q9">3</label>
+                    <input type="radio" name="q9" id="3q9" value="3">
+                    <label for="4q9">4</label>
+                    <input type="radio" name="q9" id="4q9" value="4">
+                    <label for="5q9">5</label>
+                    <input type="radio" name="q9" id="5q9" value="5">
+                    <label for="6q9">6</label>
+                    <input type="radio" name="q9" id="6q9" value="6">
+                    <label for="7q9">7</label>
+                    <input type="radio" name="q9" id="7q9" value="7">
+                    <label for="8q9">8</label>
+                    <input type="radio" name="q9" id="8q9" value="8">
+                    <label for="9q9">9</label>
+                    <input type="radio" name="q9" id="9q9" value="9">
+                    <label for="10q9">10</label>
+                    <input type="radio" name="q9" id="10q9" value="10">
+                    <br>
+                    <p>10. Physical self-care (diet, exercise, sleep)</p>
+                    <label for="1q10">1</label>
+                    <input type="radio" name="q10" id="1q10" value="1">
+                    <label for="2q10">2</label>
+                    <input type="radio" name="q10" id="2q10" value="2">
+                    <label for="3q10">3</label>
+                    <input type="radio" name="q10" id="3q10" value="3">
+                    <label for="4q10">4</label>
+                    <input type="radio" name="q10" id="4q10" value="4">
+                    <label for="5q10">5</label>
+                    <input type="radio" name="q10" id="5q10" value="5">
+                    <label for="6q10">6</label>
+                    <input type="radio" name="q10" id="6q10" value="6">
+                    <label for="7q10">7</label>
+                    <input type="radio" name="q10" id="7q10" value="7">
+                    <label for="8q10">8</label>
+                    <input type="radio" name="q10" id="8q10" value="8">
+                    <label for="9q10">9</label>
+                    <input type="radio" name="q10" id="9q10" value="9">
+                    <label for="10q10">10</label>
+                    <input type="radio" name="q10" id="10q10" value="10">
+                    <br>
+                    <p>11. Environmental issues</p>
+                    <label for="1q7">1</label>
+                    <input type="radio" name="q11" id="1q11" value="1">
+                    <label for="2q7">2</label>
+                    <input type="radio" name="q11" id="2q11" value="2">
+                    <label for="3q7">3</label>
+                    <input type="radio" name="q11" id="3q11" value="3">
+                    <label for="4q7">4</label>
+                    <input type="radio" name="q11" id="4q11" value="4">
+                    <label for="5q7">5</label>
+                    <input type="radio" name="q11" id="5q11" value="5">
+                    <label for="6q7">6</label>
+                    <input type="radio" name="q11" id="6q11" value="6">
+                    <label for="7q7">7</label>
+                    <input type="radio" name="q11" id="7q11" value="7">
+                    <label for="8q1">8</label>
+                    <input type="radio" name="q11" id="8q11" value="8">
+                    <label for="9q1">9</label>
+                    <input type="radio" name="q11" id="9q11" value="9">
+                    <label for="10q1">10</label>
+                    <input type="radio" name="q11" id="10q11" value="10">
+                    <br>
+                    <p>12. Art, creative expression, aesthetics</p>
+                    <label for="1q7">1</label>
+                    <input type="radio" name="q12" id="1q12" value="1">
+                    <label for="2q7">2</label>
+                    <input type="radio" name="q12" id="2q12" value="2">
+                    <label for="3q7">3</label>
+                    <input type="radio" name="q12" id="3q12" value="3">
+                    <label for="4q7">4</label>
+                    <input type="radio" name="q12" id="4q12" value="4">
+                    <label for="5q7">5</label>
+                    <input type="radio" name="q12" id="5q12" value="5">
+                    <label for="6q7">6</label>
+                    <input type="radio" name="q12" id="6q12" value="6">
+                    <label for="7q7">7</label>
+                    <input type="radio" name="q12" id="7q12" value="7">
+                    <label for="8q1">8</label>
+                    <input type="radio" name="q12" id="8q12" value="8">
+                    <label for="9q1">9</label>
+                    <input type="radio" name="q12" id="9q12" value="9">
+                    <label for="10q1">10</label>
+                    <input type="radio" name="q12" id="10q12" value="10">
+                    <br>
+                    <p>In this section, we would like you to give the rating of how consistent your actions have been with your values in 
+                      each of these domains. We are not asking about your ideal in each area. We are also not asking what others think of you. 
+                      Everyone does better in some areas than others. People also do better at some times than at others. We want to know how 
+                      you think you have been doing during the past week. Rate each area on a scale of 1 to 10. A score of 1 means that your 
+                      actions have been completely inconsistent with your values in this area. A score of 10 means that your actions have been 
+                      completely consistent with your values. 
+                  </p>
+                  <p>1. Family (other than marriage or parenting)</p>
+                  <label for="1q1">1</label>
+                  <input type="radio" name="q13" id="1q1" value="1">
+                  <label for="2q1">2</label>
+                  <input type="radio" name="q13" id="2q1" value="2">
+                  <label for="3q1">3</label>
+                  <input type="radio" name="q13" id="3q1" value="3">
+                  <label for="4q1">4</label>
+                  <input type="radio" name="q13" id="4q1" value="4">
+                  <label for="5q1">5</label>
+                  <input type="radio" name="q13" id="5q1" value="5">
+                  <label for="6q1">6</label>
+                  <input type="radio" name="q13" id="6q1" value="6">
+                  <label for="7q1">7</label>
+                  <input type="radio" name="q13" id="7q1" value="7">
+                  <label for="8q1">8</label>
+                  <input type="radio" name="q13" id="8q1" value="8">
+                  <label for="9q1">9</label>
+                  <input type="radio" name="q13" id="9q1" value="9">
+                  <label for="10q1">10</label>
+                  <input type="radio" name="q13" id="10q1" value="10">
+                  <br>
+                  <p>2. Marriage/couple/intimate relations</p>
+                  <label for="1q2">1</label>
+                  <input type="radio" name="q14" id="1q2" value="1">
+                  <label for="2q2">2</label>
+                  <input type="radio" name="q14" id="2q2" value="2">
+                  <label for="3q2">3</label>
+                  <input type="radio" name="q14" id="3q2" value="3">
+                  <label for="4q2">4</label>
+                  <input type="radio" name="q14" id="4q2" value="4">
+                  <label for="5q2">5</label>
+                  <input type="radio" name="q14" id="5q2" value="5">
+                  <label for="6q2">6</label>
+                  <input type="radio" name="q14" id="6q2" value="6">
+                  <label for="7q2">7</label>
+                  <input type="radio" name="q14" id="7q2" value="7">
+                  <label for="8q2">8</label>
+                  <input type="radio" name="q14" id="8q2" value="8">
+                  <label for="9q2">9</label>
+                  <input type="radio" name="q14" id="9q2" value="9">
+                  <label for="10q2">10</label>
+                  <input type="radio" name="q14" id="10q2" value="10">
+                  <br>
+                  <p>3. Parenting</p>
+                  <label for="1q3">1</label>
+                  <input type="radio" name="q15" id="1q3" value="1">
+                  <label for="2q3">2</label>
+                  <input type="radio" name="q15" id="2q3" value="2">
+                  <label for="3q3">3</label>
+                  <input type="radio" name="q15" id="3q3" value="3">
+                  <label for="4q3">4</label>
+                  <input type="radio" name="q15" id="4q3" value="4">
+                  <label for="5q3">5</label>
+                  <input type="radio" name="q15" id="5q3" value="5">
+                  <label for="6q3">6</label>
+                  <input type="radio" name="q15" id="6q3" value="6">
+                  <label for="7q3">7</label>
+                  <input type="radio" name="q15" id="7q3" value="7">
+                  <label for="8q3">8</label>
+                  <input type="radio" name="q15" id="8q3" value="8">
+                  <label for="9q3">9</label>
+                  <input type="radio" name="q15" id="9q3" value="9">
+                  <label for="10q3">10</label>
+                  <input type="radio" name="q15" id="10q3" value="10">
+                  <br>
+                  <p>4. Friends/social life</p>
+                  <label for="1q4">1</label>
+                  <input type="radio" name="q16" id="1q4" value="1">
+                  <label for="2q4">2</label>
+                  <input type="radio" name="q1" id="2q4" value="2">
+                  <label for="3q4">3</label>
+                  <input type="radio" name="q16" id="3q4" value="3">
+                  <label for="4q4">4</label>
+                  <input type="radio" name="q16" id="4q4" value="4">
+                  <label for="5q4">5</label>
+                  <input type="radio" name="q16" id="5q4" value="5">
+                  <label for="6q4">6</label>
+                  <input type="radio" name="q16" id="6q4" value="6">
+                  <label for="7q4">7</label>
+                  <input type="radio" name="q16" id="7q4" value="7">
+                  <label for="8q4">8</label>
+                  <input type="radio" name="q16" id="8q4" value="8">
+                  <label for="9q4">9</label>
+                  <input type="radio" name="q16" id="9q4" value="9">
+                  <label for="10q4">10</label>
+                  <input type="radio" name="q16" id="10q4" value="10">
+                  <br>
+                  <p>5. Work</p>
+                  <label for="1q5">1</label>
+                  <input type="radio" name="q17" id="1q5" value="1">
+                  <label for="2q5">2</label>
+                  <input type="radio" name="q17" id="2q5" value="2">
+                  <label for="3q5">3</label>
+                  <input type="radio" name="q17" id="3q5" value="3">
+                  <label for="4q5">4</label>
+                  <input type="radio" name="q17" id="4q5" value="4">
+                  <label for="5q5">5</label>
+                  <input type="radio" name="q17" id="5q5" value="5">
+                  <label for="6q5">6</label>
+                  <input type="radio" name="q17" id="6q5" value="6">
+                  <label for="7q5">7</label>
+                  <input type="radio" name="q17" id="7q5" value="7">
+                  <label for="8q5">8</label>
+                  <input type="radio" name="q17" id="8q5" value="8">
+                  <label for="9q5">9</label>
+                  <input type="radio" name="q17" id="9q5" value="9">
+                  <label for="10q5">10</label>
+                  <input type="radio" name="q17" id="10q5" value="10">
+                  <br>
+                  <p>6. Education/training</p>
+                  <label for="1q6">1</label>
+                  <input type="radio" name="q18" id="1q6" value="1">
+                  <label for="2q6">2</label>
+                  <input type="radio" name="q18" id="2q6" value="2">
+                  <label for="3q6">3</label>
+                  <input type="radio" name="q18" id="3q6" value="3">
+                  <label for="4q6">4</label>
+                  <input type="radio" name="q18" id="4q6" value="4">
+                  <label for="5q6">5</label>
+                  <input type="radio" name="q18" id="5q6" value="5">
+                  <label for="6q6">6</label>
+                  <input type="radio" name="q18" id="6q6" value="6">
+                  <label for="7q6">7</label>
+                  <input type="radio" name="q18" id="7q6" value="7">
+                  <label for="8q6">8</label>
+                  <input type="radio" name="q18" id="8q6" value="8">
+                  <label for="9q6">9</label>
+                  <input type="radio" name="q18" id="9q6" value="9">
+                  <label for="10q6">10</label>
+                  <input type="radio" name="q18" id="10q6" value="10">
+                  <br>
+                  <p>7. Recreation/fun</p>
+                  <label for="1q7">1</label>
+                  <input type="radio" name="q19" id="1q7" value="1">
+                  <label for="2q7">2</label>
+                  <input type="radio" name="q19" id="2q7" value="2">
+                  <label for="3q7">3</label>
+                  <input type="radio" name="q19" id="3q7" value="3">
+                  <label for="4q7">4</label>
+                  <input type="radio" name="q19" id="4q7" value="4">
+                  <label for="5q7">5</label>
+                  <input type="radio" name="q19" id="5q7" value="5">
+                  <label for="6q7">6</label>
+                  <input type="radio" name="q19" id="6q7" value="6">
+                  <label for="7q7">7</label>
+                  <input type="radio" name="q19" id="7q7" value="7">
+                  <label for="8q7">8</label>
+                  <input type="radio" name="q19" id="8q7" value="8">
+                  <label for="9q7">9</label>
+                  <input type="radio" name="q19" id="9q7" value="9">
+                  <label for="10q7">10</label>
+                  <input type="radio" name="q19" id="10q7" value="10">
+                  <br>
+                  <p>8. Spirituality</p>
+                  <label for="1q8">1</label>
+                  <input type="radio" name="q20" id="1q8" value="1">
+                  <label for="2q8">2</label>
+                  <input type="radio" name="q20" id="2q8" value="2">
+                  <label for="3q8">3</label>
+                  <input type="radio" name="q20" id="3q8" value="3">
+                  <label for="4q8">4</label>
+                  <input type="radio" name="q20" id="4q8" value="4">
+                  <label for="5q8">5</label>
+                  <input type="radio" name="q20" id="5q8" value="5">
+                  <label for="6q8">6</label>
+                  <input type="radio" name="q20" id="6q8" value="6">
+                  <label for="7q8">7</label>
+                  <input type="radio" name="q20" id="7q8" value="7">
+                  <label for="8q8">8</label>
+                  <input type="radio" name="q20" id="8q8" value="8">
+                  <label for="9q8">9</label>
+                  <input type="radio" name="q20" id="9q8" value="9">
+                  <label for="10q8">10</label>
+                  <input type="radio" name="q20" id="10q8" value="10">
+                  <br>
+                  <p>9. Citizenship/community life</p>
+                  <label for="1q9">1</label>
+                  <input type="radio" name="q21" id="1q9" value="1">
+                  <label for="2q9">2</label>
+                  <input type="radio" name="q21" id="2q9" value="2">
+                  <label for="3q9">3</label>
+                  <input type="radio" name="q21" id="3q9" value="3">
+                  <label for="4q9">4</label>
+                  <input type="radio" name="q21" id="4q9" value="4">
+                  <label for="5q9">5</label>
+                  <input type="radio" name="q21" id="5q9" value="5">
+                  <label for="6q9">6</label>
+                  <input type="radio" name="q21" id="6q9" value="6">
+                  <label for="7q9">7</label>
+                  <input type="radio" name="q21" id="7q9" value="7">
+                  <label for="8q9">8</label>
+                  <input type="radio" name="q21" id="8q9" value="8">
+                  <label for="9q9">9</label>
+                  <input type="radio" name="q21" id="9q9" value="9">
+                  <label for="10q9">10</label>
+                  <input type="radio" name="q21" id="10q9" value="10">
+                  <br>
+                  <p>10. Physical self-care (diet, exercise, sleep)</p>
+                  <label for="1q10">1</label>
+                  <input type="radio" name="q22" id="1q10" value="1">
+                  <label for="2q10">2</label>
+                  <input type="radio" name="q22" id="2q10" value="2">
+                  <label for="3q10">3</label>
+                  <input type="radio" name="q22" id="3q10" value="3">
+                  <label for="4q10">4</label>
+                  <input type="radio" name="q22" id="4q10" value="4">
+                  <label for="5q10">5</label>
+                  <input type="radio" name="q22" id="5q10" value="5">
+                  <label for="6q10">6</label>
+                  <input type="radio" name="q22" id="6q10" value="6">
+                  <label for="7q10">7</label>
+                  <input type="radio" name="q22" id="7q10" value="7">
+                  <label for="8q10">8</label>
+                  <input type="radio" name="q22" id="8q10" value="8">
+                  <label for="9q10">9</label>
+                  <input type="radio" name="q22" id="9q10" value="9">
+                  <label for="10q10">10</label>
+                  <input type="radio" name="q22" id="10q10" value="10">
+                  <br>
+                  <p>11. Environmental issues</p>
+                  <label for="1q7">1</label>
+                  <input type="radio" name="q23" id="1q11" value="1">
+                  <label for="2q7">2</label>
+                  <input type="radio" name="q23" id="2q11" value="2">
+                  <label for="3q7">3</label>
+                  <input type="radio" name="q23" id="3q11" value="3">
+                  <label for="4q7">4</label>
+                  <input type="radio" name="q23" id="4q11" value="4">
+                  <label for="5q7">5</label>
+                  <input type="radio" name="q23" id="5q11" value="5">
+                  <label for="6q7">6</label>
+                  <input type="radio" name="q23" id="6q11" value="6">
+                  <label for="7q7">7</label>
+                  <input type="radio" name="q23" id="7q11" value="7">
+                  <label for="8q1">8</label>
+                  <input type="radio" name="q23" id="8q11" value="8">
+                  <label for="9q1">9</label>
+                  <input type="radio" name="q23" id="9q11" value="9">
+                  <label for="10q1">10</label>
+                  <input type="radio" name="q23" id="10q11" value="10">
+                  <br>
+                  <p>12. Art, creative expression, aesthetics</p>
+                  <label for="1q7">1</label>
+                  <input type="radio" name="q24" id="1q12" value="1">
+                  <label for="2q7">2</label>
+                  <input type="radio" name="q24" id="2q12" value="2">
+                  <label for="3q7">3</label>
+                  <input type="radio" name="q24" id="3q12" value="3">
+                  <label for="4q7">4</label>
+                  <input type="radio" name="q24" id="4q12" value="4">
+                  <label for="5q7">5</label>
+                  <input type="radio" name="q24" id="5q12" value="5">
+                  <label for="6q7">6</label>
+                  <input type="radio" name="q24" id="6q12" value="6">
+                  <label for="7q7">7</label>
+                  <input type="radio" name="q24" id="7q12" value="7">
+                  <label for="8q1">8</label>
+                  <input type="radio" name="q24" id="8q12" value="8">
+                  <label for="9q1">9</label>
+                  <input type="radio" name="q24" id="9q12" value="9">
+                  <label for="10q1">10</label>
+                  <input type="radio" name="q24" id="10q12" value="10">
+                  <br>
+                    <input id="VLQ-submit" type="submit" value="Get score">
+                    <h3 id="VLQ-score-confirmation">Your score: X</h3>
+                  </form>
+                  <p>
+                    There are a number of ways to use the results. The first is to look at all domains that have relatively high 
+                    important scores (a score of 9 or 10 ) and also have relatively low consistency scores (6 or less). 
+                    These are clear problem areas, and I suggest doing your initial values work with any of them. Then you can move 
+                    on to other areas. 
+                  </p>
+                  <p>
+                    The overall score can also be useful. To get a rough sense of how your score compares to those of the broad public, 
+                    the average composite result is 61. 
+                  </p>
+                  <p>
+                    Now, with a good idea of the values domain that you'd like to start working on, you're ready to get going. 
+                  </p>
+                  <h3>Exercise 1: Values Writing</h3>
+                  <p>
+                    Write for 10 minutes about a value you care about deeply in any domain from the list above. As you do so,
+                    address the following questions: What do I care about in this area? What do I want to do in this area that
+                    reflects caring? When in my life has this value been important? What have I seen in my life when other 
+                    pursue thsi value, or not? What might I do to manifest this value more in my life? When have I violated
+                    this value and has that been costly?
+                  </p>
+                  <p>
+                    Try to focus your writing on the qualities of your life as you want to live it - qualities of your own that you
+                    hold as being of intrinsic importance. This is between you and you; it's not about seeking approval or following
+                    a bunch of rules.
+                  </p>
+                  <textarea rows="20" cols="150" placeholder="Write your thoughts here..."></textarea>
+                  <p>
+                    Now read what you wrote and see if you can distill out of it a few examples of things you want to do in this area. 
+                    Actual behavior. Next look for mentions of the qualities you want to manifest in your actions. You might want to 
+                    do things genuinely, lovingly, carefully, creatively, curiously, compassionately, respectfully, openly, joyously, 
+                    industriously, healthfully, adventurously and so on and so on. 
+                  </p>
+                  <p>
+                    With this first set of actions you'd like to take, you might want to move now to the next course, to gain guidance 
+                    about how to commit to them. If you move on to the next course be sure to come back to do at least these next two 
+                    exercises. They have proven very powerful for people in developing a deeper awareness of their values and continuing
+                    to chart a course of more meaningful living. 
+                  </p>
+			</section>
+    </main>
+    <footer>
+      <p>©Eoin Cotter 2021</p>
+    </footer>
+  </body>
+</html>
